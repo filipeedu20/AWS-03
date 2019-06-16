@@ -44,36 +44,7 @@ paths:
       description: Retorna categorias
       # used as the method name of the controller
       operationId: lista categorias 
-      parameters:
-        - name: name
-          in: query
-          description: Retorna categorias de produtos
-          required: false
-          type: string
-      responses:
-        "200":
-          description: Success
-          schema:
-            # a pointer to a definition
-            $ref: "#/definitions/Produtos"
-        # responses may fall through to errors
-        default:
-          description: Error
-          schema:
-            $ref: "#/definitions/ErrorResponse"
-  /produtos/carrinho:
-    # binds a127 app logic to a route
-    x-swagger-router-controller: lista produtos do carrinho de compras 
-    get:
-      description: Retorna produtos do carrinho de compras
-      # used as the method name of the controller
-      operationId: lista carrinho 
-      parameters:
-        - name: name
-          in: query
-          description: Retorna categorias de produtos
-          required: false
-          type: string
+      parameters: []
       responses:
         "200":
           description: Success
